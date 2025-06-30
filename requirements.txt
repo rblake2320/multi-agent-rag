@@ -1,0 +1,6 @@
+langchain
+chromadb
+llama-cpp-python
+sentence-transformers
+unstructured
+python-dotenv
