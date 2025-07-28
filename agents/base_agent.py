@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any
 
-from langchain.llms import LlamaCpp
+from langchain_community.llms import LlamaCpp
 
 
 class BaseAgent(ABC):

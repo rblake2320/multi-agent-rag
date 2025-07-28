@@ -1,10 +1,10 @@
 import argparse
 import pathlib
 
-from langchain.document_loaders import UnstructuredFileLoader, CSVLoader, TextLoader
+from langchain_community.document_loaders import UnstructuredFileLoader, CSVLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
