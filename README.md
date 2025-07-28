@@ -28,6 +28,16 @@ pip install -r requirements.txt
 export LLAMA_MODEL_PATH="/path/to/your/model.gguf"
 ```
 
+## Quick Start
+
+Try the example script to see the system in action:
+
+```bash
+python example.py
+```
+
+This will create sample documents and demonstrate the ingestion and querying workflow (note: requires a model file for full functionality).
+
 ## Usage
 
 ### Document Ingestion
@@ -144,7 +154,27 @@ pip install -r requirements.txt
 
 For development dependencies:
 ```bash
-pip install -r requirements-dev.txt  # If available
+pip install -r requirements-dev.txt
+```
+
+### Network/Offline Usage
+
+If you encounter network issues when downloading models:
+- Download embedding models manually and set up offline mode
+- Use local model files instead of downloading from Hugging Face
+- Check firewall settings if downloads fail
+
+### Running Tests
+
+```bash
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=. --cov-report=term-missing
+
+# Run specific test file
+pytest tests/test_ingest.py -v
 ```
 
 ## Roadmap
